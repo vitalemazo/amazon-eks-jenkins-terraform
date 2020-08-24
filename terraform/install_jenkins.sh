@@ -15,7 +15,7 @@ yum install -y git
 
 echo "Install Docker engine"
 yum update -y
-yum install docker -y
+yum install docker -y --nogpgcheck
 #sudo usermod -a -G docker jenkins
 #sudo service docker start
 sudo chkconfig docker on
